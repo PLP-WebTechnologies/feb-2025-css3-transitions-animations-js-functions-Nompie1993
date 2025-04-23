@@ -1,0 +1,81 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: blue;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input {
+    padding: 8px;
+    width: 300px;
+}
+
+/* Animation styles */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin: 30px auto;
+    transition: all 0.3s ease;
+}
+
+/* CSS Animation */
+@keyframes slideAndBounce {
+    0% {
+        transform: translateX(0) scale(1);
+    }
+    25% {
+        transform: translateX(100px) scale(1.2);
+    }
+    50% {
+        transform: translateX(-100px) scale(0.8);
+    }
+    75% {
+        transform: translateX(100px) scale(1.1);
+    }
+    100% {
+        transform: translateX(0) scale(1);
+    }
+}
+
+.animate {
+    animation: slideAndBounce 2s ease-in-out;
+}
+
+.color-change {
+    background-color: #e74c3c;
+    transform: rotate(45deg);
+}
